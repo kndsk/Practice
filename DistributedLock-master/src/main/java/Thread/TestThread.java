@@ -39,8 +39,9 @@ public class TestThread {
                     }
 
                 };
-                //将task添加进任务队列
-                executorService.submit(task);
+
+              // executorService.submit(task);
+                // 将task添加进任务队列
                 tasks.add(task);
             }
 
