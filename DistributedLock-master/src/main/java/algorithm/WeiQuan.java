@@ -11,8 +11,12 @@ public class WeiQuan {
 
     public static int removeNM(int n, int m) {
         LinkedList ll = new LinkedList();
-        for(int i = 0; i < n; i++)
+        //初始化数据
+        for(int i = 0; i < n; i++) {
             ll.add(new Integer(i + 1));
+        }
+
+        //删除3的倍数，求最后一个
         int removed = -1;
         while (ll.size() > 1) {
             removed = (removed + m) % ll.size();
